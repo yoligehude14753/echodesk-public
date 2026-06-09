@@ -50,5 +50,5 @@ https://echodesk.yoliyoli.uk/health
 
 ### 需要安装 Python 或 Node 吗？
 
-不需要。正式安装包已经内置本地 backend。Python、Node、Docker 只给开发者构建源码时使用。
+不需要。正式安装包已经内置本地运行组件。Python、Node、Docker 只用于高级构建场景。
 

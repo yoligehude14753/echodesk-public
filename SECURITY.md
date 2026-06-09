@@ -8,7 +8,7 @@ The official EchoDesk public distribution repository is:
 https://github.com/yoligehude14753/echodesk-public
 ```
 
-Only download installers from this repository's Releases page. Do not run binaries from unofficial mirrors, leaked-source repositories, random ZIP files, or third-party "cracked" packages.
+Only download installers from this repository's Releases page. Do not run binaries from unofficial mirrors, random ZIP files, or third-party "cracked" packages.
 
 ## Access Key Safety
 

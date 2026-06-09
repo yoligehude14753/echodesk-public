@@ -1,17 +1,21 @@
 # EchoDesk
 
-EchoDesk 是一个桌面办公助手。这个仓库是 **公开分发仓库**，用于发布安装包、使用说明和安全公告。
+EchoDesk 是一个桌面办公助手，用来处理会议记录、日常写作、资料整理和语音办公任务。
 
-> 重要：EchoDesk 不是开源项目。本仓库不包含完整源码、服务端实现、模型网关凭证或内部部署配置。公开仓库只用于让用户下载安装包并查看使用文档。
+## Get Started
 
-## 下载与安装
+### 1. Install EchoDesk
 
-从本仓库的 [Releases](https://github.com/yoligehude14753/echodesk-public/releases) 下载最新版本：
+从 [Releases](https://github.com/yoligehude14753/echodesk-public/releases) 下载适合你系统的安装包：
 
 - macOS：下载 `EchoDesk-*-mac-*.dmg`
 - Windows：下载 `EchoDesk-*-win-*.exe`
 
-安装后打开 EchoDesk，进入「设置 → 远程服务」，填写：
+安装完成后打开 EchoDesk。
+
+### 2. Configure Access
+
+进入「设置 → 远程服务」，填写：
 
 ```text
 服务网关地址：https://echodesk.yoliyoli.uk
@@ -20,17 +24,21 @@ EchoDesk 是一个桌面办公助手。这个仓库是 **公开分发仓库**，
 
 保存后即可使用联网能力，包括主 LLM、fast LLM、语音转文字、文字转语音和文档生成。
 
-## 为什么需要 Access Key
+### 3. Start Working
 
-EchoDesk 的公网能力通过 `echo-gateway` 提供。真实的 Yunwu / heyi-bj 服务密钥只保存在服务端，不会写进客户端，也不会出现在这个公开仓库。
+你可以开始使用：
 
-客户端只保存你的 Access Key：
+- 会议记录与整理
+- 日常文档写作
+- 资料问答与检索
+- 语音转文字
+- 文字转语音
 
-```text
-EchoDesk App --(Access Key)--> echo-gateway --(真实服务凭证)--> Yunwu / heyi-bj
-```
+## Access Key
 
-没有 Access Key，或 Key 错误 / 被吊销时，联网接口会返回 `401`。
+EchoDesk 的联网能力需要有效 Access Key。维护者会给特定用户单独发放 Key。
+
+请不要把 Key 发到公开 issue、截图、日志或文档里。没有 Access Key，或 Key 错误 / 被吊销时，联网接口会返回 `401`。
 
 ## 关于 `https://echodesk.yoliyoli.uk`
 
@@ -52,7 +60,8 @@ shasum -a 256 EchoDesk-*
 
 macOS / Windows 可能因为未签名安装包显示安全警告。确认来源是本仓库 Releases 后再继续安装。后续版本会接入代码签名和公证。
 
-## 许可证
+## Documentation
 
-EchoDesk 是闭源专有软件。详见 [`LICENSE.md`](LICENSE.md)。
+- [Install Guide](docs/INSTALL.md)
+- [Security Policy](SECURITY.md)
 
