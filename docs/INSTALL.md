@@ -15,7 +15,7 @@
 
 ## macOS
 
-1. 下载 `EchoDesk-*-mac-*.dmg`。
+1. 下载 `EchoDesk-*-mac-arm64.dmg`。
 2. 打开 `.dmg`。
 3. 把 `EchoDesk.app` 拖入 `Applications`。
 4. 首次打开如果提示“无法验证开发者”，右键 `EchoDesk.app`，选择「打开」。
@@ -23,10 +23,7 @@
 
 ## Windows
 
-1. 下载 `EchoDesk-*-win-*.exe`。
-2. 双击安装。
-3. 如 Windows SmartScreen 提示未知发布者，确认来源是本仓库 Release 后继续。
-4. 打开 EchoDesk，按提示填写网关地址和 Access Key。
+Windows 安装包稍后提供。当前 Release 先提供 macOS Apple Silicon 版本。
 
 ## 常见问题
 
